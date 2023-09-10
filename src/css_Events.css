@@ -1,0 +1,39 @@
+.title{
+width:100%;
+text-align: center;
+font-family: 'DosisM';
+font-weight: bold;
+font-size: 40px;
+}
+.Affiches0{
+    width: 100%; /* Définissez la largeur de votre choix */
+    height: 50%; /* Définissez la hauteur de votre choix */
+    background: 
+      linear-gradient(white, transparent, white),
+      url('./assets/Fevent1.jpg') center/cover no-repeat;
+}
+.Affiches {
+    display: flex;
+    width: 90%;
+    height:50vh;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+}
+.Affiches img{
+    height: 90%;
+    margin:auto;
+    border:3px solid white;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.box2022 img{
+    height:40vh;
+}
+.box2022 video {
+    width: auto;
+    height: 40vh;
+    object-fit: contain;
+}

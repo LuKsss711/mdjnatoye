@@ -1,0 +1,419 @@
+@font-face {
+  font-family: 'DosisM';
+  src: url(fonts/Dosis-Medium.ttf);
+}
+@font-face {
+  font-family: 'Cursivestd';
+  src: url(fonts/Cursive\ standard\ Bold.ttf);
+}
+@font-face {
+  font-family: 'CursiveSB';
+  src: url(fonts/CursiveSerif-Bold.ttf);
+}
+/*====================Body====================*/
+html,body{width:100vw; overflow-x: hidden;}
+body {
+  background: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow-x: hidden;
+}
+.img {
+  width: 50vw;
+}
+section{
+  display: none;
+}
+section.active{
+  display: block;
+}
+.HP {
+  margin-top:15vh;
+  margin-bottom: 3vh;
+}
+.HP h1 {
+  font-family: 'DosisM';
+  font-weight: bold;
+  color: black;
+  padding-left: 5%;
+  font-size: 10vh;
+  margin-bottom: 20px; /* Ajoutez une marge en bas pour séparer le titre du contenu */
+}
+.HP h2 {
+  font-family: 'DosisM';
+  font-weight: bold;
+  color: black;
+  font-size: 10vh;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width:30vw;
+  text-align: center;
+  border-top:3px solid  #f61673;
+  border-bottom:3px solid  #f61673;
+  padding-bottom: 1vh;
+}
+.HP h3 {
+  font-family: 'DosisM';
+  font-weight: bold;
+  color: black;
+  padding-left: 5%;
+  font-size: 4vh;
+  margin-bottom: 20px; /* Ajoutez une marge en bas pour séparer le titre du contenu */
+}
+/*-------------------------------------TICKET CONTAINER---------------------------------------------------*/
+.ticket-container {
+  display: flex;
+  width: 90vw;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+  overflow: hidden;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url(assets/party5.jpg); background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  border: solid black 5px;
+  margin-bottom: 5vh;
+}
+.box {
+  width:90vw;
+  justify-content: center;
+  text-align: center;
+  font-family: 'DosisM';
+  font-size: 3.5vh;
+  padding: 0;
+}
+.box button{
+  height:10vh;
+  width:15vw;
+  border-radius: 25px;
+  font-family: 'DosisM';
+  font-weight: bold;
+  font-size: 6vh;
+  color:white;
+  background-color: #f61673;
+  border:3px solid #f61673;
+  margin: 0;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.box button:hover {
+  background-color: white;
+  color:#f61673;
+}
+.box button:active {
+  transform: translateY(5%);
+  transition: transform 0.1s ease-in-out;
+}
+.eph1 p {
+  margin:0;
+  padding: 0;
+  height:4vh;
+  color: red;
+  justify-content: center;
+
+}
+/*-------------------------------------LOCATION CONTAINER---------------------------------------------------*/
+.box-container {
+  display: flex;
+  width: 70vw;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0)), url(assets/location.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 7%;
+}
+a{text-decoration: none;}
+.box-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.box-container:active {
+  transform: translateY(5%);
+  transition: transform 0.1s ease-in-out;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  font-size: 15x;
+  color: black;
+  margin-left: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icon-text p {
+  margin: 0;
+  line-height: 2;
+  font-size: 2.5vh;
+}
+
+.icon-img {
+  width: auto;
+  margin-right: 3vw; /* Réduire l'espace entre l'icône et le texte */
+}
+
+.icon-img img {
+  height: 8vh;
+}
+/*-------------------------------------LINE-UP---------------------------------------------------*/
+.bod2 {
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-bottom:2vw;
+  width: 90%;
+  border-radius: 5vw;
+  position: relative;
+  overflow: hidden;
+  border: solid #f61673 5px;
+  background: url(./assets/party1.jpg); /* Assurez-vous que l'image est maintenant au format PNG */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.7);
+}
+.innerbod2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: 200%;
+  overflow: hidden;
+}
+.bod2 h1 {
+  font-family: 'DosisM';
+  font-weight: bold;
+  color: black;
+  width:90%;
+  font-size: 100px;
+  margin:0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bod2 h2 {
+  font-family: 'DosisM';
+  font-weight: bold;
+  color: black;
+  width:100%;
+  font-size: 350%;
+  font-style: oblique;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom:4px solid  #8DC4FB;
+  margin-top: 0;
+  border-top:none;
+}
+.LineUp {
+  display: flex;
+  justify-content:space-around ;
+}
+.LineUpElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.LineUp img{
+  cursor: pointer;
+  max-width: 10vw;
+  padding-bottom: 3%;
+  max-height: 12vh;
+}
+.LineUp img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.LineUp img:active {
+  transform: translateY(5%);
+  transition: transform 0.1s ease-in-out;
+}
+.innerbod2 h3{
+  text-align: center;
+}
+.ac {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centre horizontalement le contenu du conteneur */
+  align-items: center; /* Centre verticalement le contenu du conteneur */
+}
+
+.ac h4 {
+  margin: 0;
+  display: inline-block; /* Traite le texte comme un bloc en ligne */
+  vertical-align: middle; /* Aligne le texte verticalement au centre de l'image */
+  color: black;
+}
+
+.ac img {
+  height: 15vh;
+  margin: 0;
+}
+
+
+.bloc
+{
+  width: 600px;
+  margin:0;
+}
+.eph2{
+  width: 100vw;
+  margin-left:5%;
+}
+.eph2 p{
+  padding: 0;
+  font-size:3vh;
+  color: red;
+  justify-content: center;
+
+}
+.LineUpElements p{
+  font-size: 5vh;
+  font-weight: 1000;
+}
+.SepLine{
+  background: none;
+  height:1vh;
+  width: 100vw;
+  border-bottom: 2px solid black;
+  margin:0;
+}
+/*-------------------------------------ANIMATION---------------------------------------------------*/
+
+.slide-in {
+  animation: slideIn 1s forwards; /* Animation d'une seconde pour faire glisser le box-container */
+}
+.slide-in2 {
+  animation: slideIn2 1s forwards; /* Animation d'une seconde pour faire glisser le box-container */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Départ à gauche */
+  }
+  to {
+    transform: translateX(0); /* Arrivée à la position d'origine */
+  }
+}
+@keyframes slideIn2 {
+  from {
+    transform: translateX(200%); /* Départ à gauche */
+  }
+  to {
+    transform: translateX(0); /* Arrivée à la position d'origine */
+  }
+}
+/*==================== (2) ====================*/
+
+@media screen and (max-width: 900px) {
+  .HP{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width:auto;
+    height:auto;
+    position:relative;
+    top:-20vh;
+    margin-bottom:-20vh;
+    border-bottom: 3px solid black;
+    align-items:center;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .HP h1{
+    width:90vw;
+    padding-top:20vh;
+    font-size: 4vh;
+    margin: 0;
+    text-align: center;
+  }
+  .HP h2 {
+    font-size: 8vh;
+    width:60vw;
+  }
+  .HP h3{
+    font-size: 3vh;
+    background-color: white;
+  }
+  .box button{
+    height:10vh;
+    width:60vw;
+    border-radius: 45px;
+    font-family: 'DosisM';
+    font-weight: bold;
+    font-size: 6vh;
+    color:white;
+    background-color: #f61673;
+    border:3px solid #f61673;
+    margin: 0;
+    cursor: pointer;
+  }
+  .box-container{
+  background:url(assets/location.png);
+  background-size: cover;
+  padding: 0;
+  }
+  .text {
+    margin-left:auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  .text p{
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2vh;
+  }
+  .icon-img {
+    display: none;
+  }
+  .bod2 {
+    padding-top: 2vh;
+    border-radius: 25vw;
+    background: none;
+    background-color: white;
+    background-image:  linear-gradient(30deg, #b4d0d7 12%, transparent 12.5%, transparent 87%, #b4d0d7 87.5%, #b4d0d7), linear-gradient(150deg, #b4d0d7 12%, transparent 12.5%, transparent 87%, #b4d0d7 87.5%, #b4d0d7), linear-gradient(30deg, #b4d0d7 12%, transparent 12.5%, transparent 87%, #b4d0d7 87.5%, #b4d0d7), linear-gradient(150deg, #b4d0d7 12%, transparent 12.5%, transparent 87%, #b4d0d7 87.5%, #b4d0d7), linear-gradient(60deg, #b4d0d777 25%, transparent 25.5%, transparent 75%, #b4d0d777 75%, #b4d0d777), linear-gradient(60deg, #b4d0d777 25%, transparent 25.5%, transparent 75%, #b4d0d777 75%, #b4d0d777);
+    background-size: 70px 123px;
+    background-position: 0 0, 0 0, 35px 61px, 35px 61px, 0 0, 35px 61px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.7);
+    margin-bottom: 3vh;
+  }
+  .bod2 h2 {
+    width:100%;
+    font-size: 5vh;
+    font-style: oblique;
+    font-weight:1500;
+    margin-bottom: 20px;
+    border-top:3px solid  #8DC4FB;
+    background: rgba(200, 200, 200, 0.2);
+  }
+  .LineUp {
+    display: flex;
+    flex-direction: column;
+  }
+  .LineUpElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .LineUp img{
+    cursor: pointer;
+    max-width: 30vw;
+    padding-bottom: 3%;
+    max-height: 12vh;
+  }
+}

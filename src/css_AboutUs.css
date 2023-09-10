@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'GvL';
+    src: url(fonts/GrandviewLight.ttf);
+  }
+
+.bodyJeunesse {
+    width:100vw;
+    max-width:2000px;
+    position: relative;
+    top:-5vh;
+    margin-left:auto;
+    margin-right:auto;
+    border:3px solid black;
+}
+.bodyJeunesse h1{
+    margin-left:5vw;
+}
+.bodyJeunesse p{
+    margin-left:6vw;
+}
+.Group {
+    width:100%;
+    background-image:url('./assets/Group.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height:105vh;
+    position: relative;
+    top:-5vh;
+    opacity:.7;
+}
+.GroupText {
+    width:100%;
+    text-align:center;
+    height:100%;
+    align-items:center;
+    display:flex;
+}
+.GroupText h2{
+    font-family:'GvL';
+    font-size:80px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color: white;
+    position: relative;
+    top:-25%;
+}
+
+.Group:hover {
+    opacity:1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.AboutUs {
+  display: flex;
+  width:100%;
+  height: fit-content;
+}
+.AUleft{
+  width:35%;
+  margin:auto;
+  border: 3px solid black;
+}
+.AUright{
+  width:35%;
+  margin:auto;
+}
+.slider {
+    overflow: hidden;
+    width: 400px;
+    height:fit-content;
+    border: 3px solid black;
+    margin:auto;
+  }
+  
+  .slider-track {
+    display: flex;
+    animation: defilement 60s infinite linear;
+  }
+  
+  .slider img {
+    width: 400px;
+    object-fit: cover;
+  }
+  
+  @keyframes defilement {
+    0%, 14% { transform: translateX(0%); }
+    15%, 28% { transform: translateX(-100%); }
+    29%, 42% { transform: translateX(-200%); }
+    43%, 57% { transform: translateX(-300%); }
+    58%, 71% { transform: translateX(-400%); }
+    72%, 85% { transform: translateX(-500%); }
+    86%, 100% { transform: translateX(-600%); }  /* Notez que le dernier pourcentage est de -600% car il y a 7 images en total */
+  }

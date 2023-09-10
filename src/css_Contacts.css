@@ -1,0 +1,182 @@
+.bodyContact {
+    margin-top:14vh;
+}
+.bodyContact h1{
+    font-family: 'CursiveSB';
+    font-size:40px;
+    margin-left:10%;
+}
+.bodyContact h4{
+    font-family: 'CursiveSB';
+    font-size:20px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+.contactbox {
+    width: 80vw;
+    max-width: 1400px;
+    height:220px;
+    border-radius: 50px;
+    background: rgba(255,255,255,0.7);
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.mail {
+    background:rgba(51,190,255,1);
+    margin:0;
+    width:100%;
+    height:50%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid black;
+}
+.mail img {
+    height:100px;
+    max-width: 20%;
+    margin:auto;
+}
+.mailtext,.fcbtext {
+    text-align: center;
+    width: 80%;
+
+}
+.contactbox p{
+    text-align: center;
+    font-family: 'DosisM';
+    color: white;
+    font-size: 20px;
+    margin-right:10px;
+}
+.contactbox a{
+    text-align: center;
+    font-family: 'DosisM';
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom:10px;
+}
+.fcb {
+    background:rgba(59,87,157,1);
+    margin:0;
+    width:100%;
+    height:50%;
+    display: flex;
+    flex-direction: row;
+}
+.fcb img{
+    height: 90px;
+    margin:auto;
+}
+.fcbtext img{
+    height:70px;
+    margin:20px;
+}
+.followbox {
+    width: 60vw;
+    max-width: 1000px;
+    height:600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-family: 'DosisM';
+}
+.insta,.snap,.tiktok {
+    justify-content: center;
+    width:90%;
+    height:180px;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    background: white;
+    border-radius: 80px;
+    overflow: hidden;
+    align-items: center;
+}
+.Circle {
+    height:200px;
+    width:200px;
+    border-radius: 200px;
+    background:white;
+    align-content: center;
+    display: flex;
+    position: absolute;
+    right:20vw;
+    border:5px solid black;
+}
+.Circle2 {
+    height:200px;
+    width:200px;
+    border-radius: 200px;
+    background:white;
+    align-content: center;
+    display: flex;
+    position: absolute;
+    left:20vw;
+    border:5px solid black;
+}
+#QRinsta,#QRTT,#snapcode{
+    margin:auto;
+    height:150px;
+    justify-content: center;
+    align-items: center;
+}
+#QRTT{height:140px;}
+.langInsta,.langSnap,.langTikTok {
+    width:100%;
+    height:120px;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-radius: 50px;
+    border: 5px solid black;
+    overflow: hidden;
+    display: flex;
+}
+.langInsta{
+    background: linear-gradient(45deg,rgb(254,254,114),rgb(232,104,67),rgb(165,54,149),rgb(78,96,210));
+}
+.langSnap{
+    background: rgb(255,252,0);
+}
+.langTikTok{
+    background: linear-gradient(90deg,rgb(1,243,239),rgb(1,243,239),rgb(255,41,84),rgb(255,41,84),black,black);
+}
+.ftInsta,.ftTikTok,.ftSnap{
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left:50px;
+    font-size: 25px;
+    color:white;
+    justify-content: center;
+    display: flex;
+}
+.ftSnap{color:black;margin-left: 200px;}
+.insta img{
+    height: 90%;
+    margin-top:auto;
+    margin-bottom: auto;
+    margin-left:20px;
+}
+#bitmoji {
+    height: 200px;
+    margin-top:20px;
+    position: relative;
+    left:200px;
+}
+#bitmoji:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
+.Circle:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    z-index: 900;
+}
+.Circle2:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+    z-index: 900;
+}

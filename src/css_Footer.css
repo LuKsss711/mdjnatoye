@@ -1,0 +1,113 @@
+/*====================Footer====================*/
+footer {
+    border-top: 3px solid rgba(0, 0, 0, 0.5);
+    opacity: .7;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenu-footer {
+    padding-bottom: 1vh;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(160, 160, 160), rgb(70, 70, 70), rgb(0, 0, 0));
+    width:100vw;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+.footer-medias, .fcontacts {
+    width:33vw;
+    justify-content:space-between; /* Centre le contenu horizontalement */
+    align-items: center;
+    text-align: center;
+    height: 25vh;
+    margin-bottom: 2vh;
+    margin-top:2vh;
+}
+.fcontacts a{
+    color: white;
+}
+.liste-reseaux {
+    display: flex;
+    gap: 3vw;
+    list-style-type: none;
+    margin: 0;
+    align-items:center ;
+    justify-content: center;
+    padding: 0;
+}
+.liste-reseaux img {
+    max-height: 7vh;
+    width:3vw;
+}
+.fcontacts {
+    font-family: 'DosisM';
+    font-size: 3vh;
+}
+.logofooter {
+    text-align: center;
+}
+.logofooter img {
+    height: 15vh;
+    display: none;
+}
+
+.FinDePage {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+.FinDePage p{
+    font-size: 2vh;
+    color: white;
+    font-family: 'DosisM';
+    padding: 0;
+    margin:10px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    footer {
+        opacity: 1;
+        background: linear-gradient(180deg, #8DC4FB, #f61673);
+    }
+    .contenu-footer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin:0;
+        border:none;
+        background: none;
+        justify-content: center;
+    }
+    .footer-medias {
+        margin-top:4vh;
+    }
+    .liste-reseaux img {
+        height: 7vh;
+        width: auto;
+    }
+    .logofooter img {
+        height: 60px;
+        margin: 0; /* Enlève la marge pour un meilleur affichage sur les petits écrans */
+    }
+    .fcontacts {
+        width: 70vw;
+        margin-top:2vh;
+    }
+    .fcontacts a {
+        font-size: 3vh;
+        text-decoration: none;
+        color: white;
+    }
+    .FinDePage{
+        background: none;
+
+    }
+}

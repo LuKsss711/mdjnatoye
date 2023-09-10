@@ -1,0 +1,169 @@
+.bodySponsoring {
+    width: 100vw;
+    margin-top:15vh;
+    margin-bottom: 3vh;
+}
+.bodySponsoring h1{
+    font-family: 'DosisM';
+    font-weight: 1000;
+    font-size: 7vh;
+    border-bottom: 3px solid #f61673;
+    display: none;
+}
+
+.LogoSpP {
+width:95vw;
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+transition: transform 0.5s ease;
+align-items: center;
+justify-content:center ;
+border-bottom:3px solid black;
+border-top:3px solid black;
+margin-left:auto;
+margin-right: auto;
+} 
+
+.LogoSpP img {
+max-height: 25vh;
+max-width: 15vw;
+margin: 3vh 1vw;
+}
+
+.LogoSpP img:hover {
+transform: scale(1.05);
+transition: transform 0.3s ease-in-out;
+}
+  
+.LogoSpP:hover {
+animation-play-state: paused;
+}
+.bodySponsoring h2 {
+    font-family: 'DosisM';
+    font-weight: bold;
+    color: black;
+    font-size: 7vh;
+    text-align: center;
+    font-style: italic;
+    margin-bottom:2vh;
+}
+.Showroom {
+    width: 53vw;
+    height: 75vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Showroom img {
+    position: absolute;
+    justify-content: center;
+    top:2vh;
+    height:70vh;
+    opacity: 0;
+    animation-duration: 20s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    border:5px solid black;
+  }
+  
+  .Showroom img:nth-child(1) {
+    animation-name: fadeInOut1;
+  }
+  
+  .Showroom img:nth-child(2) {
+    animation-name: fadeInOut2;
+  }
+  
+  .Showroom img:nth-child(3) {
+    animation-name: fadeInOut3;
+  }
+  
+  @keyframes fadeInOut1 {
+    0%, 5% { opacity: 0; }
+    5%, 100% {opacity: 1;}
+    33%, 66% { opacity: 0; }
+  }
+  
+  @keyframes fadeInOut2 {
+    0%, 66% { opacity: 0; }
+    33%, 100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInOut3 {
+    0%, 33% { opacity: 0; }
+    66%, 100% { opacity: 1; }
+  }
+
+  .OR {
+    display: flex;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+  }
+  .OR img{
+    height:10vh;
+    cursor: pointer;
+  }
+  .OR p{
+    font-family: 'DosisM';
+    font-size: 4vh;
+  }
+  .OR img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  .OR img:active {
+    transform: translateY(5%);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  @media screen and (max-width: 900px) {
+    .bodySponsoring {
+        margin-top: -10vh;
+        margin-bottom: -10vh;
+        background-color: white;
+    }
+    .bodySponsoring h1{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        width:70vw;
+        padding-top:10vh;
+        padding-bottom: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bodySponsoring h2 {
+        font-size: 3vh;
+    }
+    .LogoSpP {
+        margin-bottom: -10vh;
+    }
+    .LogoSpP img{
+        max-width: 35vw;;
+    }
+    .Showroom {
+        width: 90vw;
+        height: 32vh;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    .OR {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10vh;
+        justify-content: center;
+      }
+    .OR p {
+        font-size: 2vh;
+    }
+    .OR img{
+        height:5vh;
+        cursor: pointer;
+    }
+  }
